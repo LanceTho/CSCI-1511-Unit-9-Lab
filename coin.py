@@ -16,10 +16,19 @@ Methods:
 """
 import random
 class Coin:
-    def __init__(self, __sideup: str) -> None:
-        self.__sideup = __sideup
+    """This class represents a coin that can be tossed"""
+
+    def __init__(self) -> None:
+        """Initializes the __sideup attribute
+
+        Args:
+            __sideup (str): a private string attribute that is initialized to 'Heads' or 'Tails' by calling the toss() function
+        """
+        self.__sideup = self.toss()
 
     def toss(self) -> None:
+        """Generates a random number of 0 or 1 and sets the __sideup attribute to "Heads" or "Tails"
+        """
         number: int = random.randint(0,1)
         if(number == 1):
             self.__sideup = "Heads"
@@ -27,9 +36,14 @@ class Coin:
             self.__sideup = "Tails"
 
     def get_sideup(self) -> str:
+        """Returns a string that states which side of the coin is facing up
+
+        Returns:
+            str: The string statement
+        """
         return f"The coin has the {self.__sideup} side facing up."
     
 if __name__ == "__main__":
-    quarter = Coin("Heads")
+    quarter = Coin()
     quarter.toss()
     print(quarter.get_sideup())
