@@ -19,33 +19,61 @@ Methods:
     toss_coin(): This method tells the player's coin to toss itself (e.g., self.__coin.toss()).
     get_coin_side(): This method gets the side of the player's coin by calling the coin's get_sideup() method and returning its value.
     win_coin(): Adds 1 to the __wallet.
-    lose_coin(): Dubtracts 1 from the __wallet
+    lose_coin(): Subtracts 1 from the __wallet
     get_wallet(): Returns the current value of __wallet.
     get_name(): Returns the value of __name.
 """
 from coin import Coin
 class Player:
+    """This class represents a player
+    """
     def __init__(self, name: str) -> None:
+        """Initializes the player object and sets up 3 private attributes
+
+        Args:
+            name (str): The name of the player
+        """
         self.__name = name
         self.__wallet: int = 20
         self.__coin = Coin()
 
     def toss_coin(self) -> None:
+        """This method tells the player's coin to toss itself
+        """
         self.__coin.toss()
     
     def get_coin_side(self) -> str:
+        """This method gets the side of the player's coin by calling the coin's get_sideup() method and returning its value
+
+        Returns:
+            str: The string statement that says the coin's value
+        """
         return self.__coin.get_sideup()
     
     def win_coin(self) -> None:
+        """Adds 1 to the __wallet
+        """
         self.__wallet += 1
 
     def lose_coin(self) -> None:
+        """Subtracts 1 to the __wallet
+        """
         self.__wallet -= 1
 
     def get_wallet(self) -> int:
+        """Returns the current value of __wallet
+
+        Returns:
+            int: The current value of __wallet
+        """
         return self.__wallet
     
     def get_name(self) -> str:
+        """Returns the current value of __name
+
+        Returns:
+            str: The current value of __name
+        """
         return self.__name
     
 if __name__ == "__main__":
