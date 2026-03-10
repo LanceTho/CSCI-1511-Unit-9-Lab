@@ -19,12 +19,9 @@ class Coin:
     """This class represents a coin that can be tossed"""
 
     def __init__(self) -> None:
-        """Initializes the __sideup attribute
-
-        Args:
-            __sideup (str): a private string attribute that is initialized to 'Heads' or 'Tails' by calling the toss() function
+        """Initializes the __sideup attribute to 'Heads' or 'Tails'
         """
-        self.__sideup = self.toss()
+        self.toss()
 
     def toss(self) -> None:
         """Generates a random number of 0 or 1 and sets the __sideup attribute to "Heads" or "Tails"
@@ -45,5 +42,6 @@ class Coin:
     
 if __name__ == "__main__":
     quarter = Coin()
+    print(quarter.get_sideup())
     quarter.toss()
     print(quarter.get_sideup())
