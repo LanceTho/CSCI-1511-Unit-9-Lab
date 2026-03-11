@@ -2,26 +2,9 @@
 Lab9_LanceTho-1.py
 Lance Thongsavanh
 This file runs the game. It creates the Player objects and manages the game loop and rules.
-Date.
+3/11/2026
 """
 
-"""
-Requirements:
-    Import: you must import the Player class (from player import Player).
-    Contain a main() function.
-    Inside main(), create 2 Player objects (e.g., player1 = Player("Player 1") and player2 = Player("Player 2")).
-    Use a while loop to ask the user if they want to play ('y' or 'n').
-    
-    Inside the loop:
-        Tell each player to toss their coin (e.g., player1.toss_coin()).
-        Get the result from each player (e.g., side1 = player1.get_coin_side()).
-        print the results of the toss (e.g., "Player 1 tossed Heads", "Player 2 tossed Tails").
-        If the sides match: call the appropriate methods for the winner to win_coin() and the loser to lose_coin(). Print who won the round.
-        Report the toal coins for each player using get_wallet().
-        ask the user if they want to play again.
-    
-    After the loop: print the final results, stating which player finished with more coins.
-"""
 from player import Player
 
 def main() -> None:

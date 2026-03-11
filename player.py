@@ -2,27 +2,9 @@
 player.py
 Lance Thongsavanh
 This class represents a player. A player has a name, has a wallet of coins, and has a Coin object to toss.
-Date.
+3/11/2026
 """
 
-"""
-Requirements:
-    Import: Import the Coin class at the top of this file (from coin import Coin).
-
-Attributes:
-    __name: A private string attribute (e.g., "Player 1").
-    __wallet: A private integer attribute, intialized to 20.
-    __coin: A private attribute that is an instance of the Coin class (e.g., self.__coin = Coin()).
-
-Methods:
-    __init__(name): The intitalizer method. It should take a name as an argument and set up all three private attributes.
-    toss_coin(): This method tells the player's coin to toss itself (e.g., self.__coin.toss()).
-    get_coin_side(): This method gets the side of the player's coin by calling the coin's get_sideup() method and returning its value.
-    win_coin(): Adds 1 to the __wallet.
-    lose_coin(): Subtracts 1 from the __wallet
-    get_wallet(): Returns the current value of __wallet.
-    get_name(): Returns the value of __name.
-"""
 from coin import Coin
 class Player:
     """This class represents a player

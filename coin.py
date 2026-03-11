@@ -2,18 +2,9 @@
 coin.py
 Lance Thongsavanh
 This class represents a single, tossable coin. It only knows about its current state (heads or tails).
-Date.
+3/11/2026
 """
 
-"""
-Attributes:
-    __sideup: A private string attribute, initialized to 'Heads' or 'Tails'.
-
-Methods:
-    __init__(): The initalizer method that sets up the __sideup attribute.
-    toss(): Generates a random timber (0 or 1) and sets __sideup to 'Heads' or 'Tails' accordingly.
-    get_sideup(): Returns the current value of __sideup.
-"""
 import random
 class Coin:
     """This class represents a coin that can be tossed"""
