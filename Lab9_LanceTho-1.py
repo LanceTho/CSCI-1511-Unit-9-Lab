@@ -65,6 +65,13 @@ def main() -> None:
 
             case _:
                 print("Error: Invalid input. Please type y or n")
+            
+        if(player1.get_wallet() == 0):
+            print(f"Game Over! {player1.get_name()} ran out of coins. {player2.get_name()} Wins!")
+            break
+        elif(player2.get_wallet() == 0):
+            print(f"Game Over! {player2.get_name()} ran out of coins. {player1.get_name()} Wins!")
+            break
     
 if __name__ == "__main__":
     main()
