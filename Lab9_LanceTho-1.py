@@ -25,6 +25,8 @@ Requirements:
 from player import Player
 
 def main() -> None:
+    """Simulates the Coin Match Game and loops until the user enters the exit condition
+    """
     player1: Player = Player("Player 1")
     player2: Player = Player("Player 2")
     print("Coin Match Game")
